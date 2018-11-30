@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="c:/Users/lidan528/Desktop/捕获.PNG">
 <meta property="og:image" content="c:/Users/lidan528/Desktop/捕获1.PNG">
-<meta property="og:updated_time" content="2018-11-30T17:34:48.111Z">
+<meta property="og:updated_time" content="2018-11-30T17:36:40.818Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python notebook">
 <meta name="twitter:description" content="UNIX env查找技巧 为了避免硬编码Python解释器的路径，可以在文件第一行注释中这样写：  1#!/usr/bin/env python  当这样编写代码的时候，env程序通过搜索PATH环境变量中罗列出来的所有目录定位python解释器。  模块命名后缀名原则  当一个python文件需要被以模块方式import时，后缀名.py是不可或缺的。  查看已导入模块的属性：  内置的dir函数">
@@ -335,7 +335,7 @@
 </blockquote>
 <h3 id="查看已导入模块的属性："><a href="#查看已导入模块的属性：" class="headerlink" title="查看已导入模块的属性："></a>查看已导入模块的属性：</h3><blockquote>
 <p> 内置的dir函数可以获得模块内部可用的变量名列表：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; &gt;&gt;&gt; dir(module_name)</span><br><span class="line">&gt; &gt;&gt;&gt; [<span class="string">'__builtins__'</span>, <span class="string">'__doc__'</span>, <span class="string">'__file__'</span>, <span class="string">'__name__'</span>, <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> &gt;&gt;&gt; dir(module_name)</span><br><span class="line"> &gt;&gt;&gt; [<span class="string">'__builtins__'</span>, <span class="string">'__doc__'</span>, <span class="string">'__file__'</span>, <span class="string">'__name__'</span>, <span class="string">'a'</span>, <span class="string">'b'</span>, <span class="string">'c'</span>]</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 <h3 id="exec-函数："><a href="#exec-函数：" class="headerlink" title="exec()函数："></a>exec()函数：</h3><blockquote>
 <p>exec()函数以一个字符串为参数，尝试运行该字符串，因此可以通过使用exec()来重新运行代码：</p>
