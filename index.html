@@ -322,8 +322,8 @@
           
             <h3 id="UNIX-env查找技巧"><a href="#UNIX-env查找技巧" class="headerlink" title="UNIX env查找技巧"></a>UNIX env查找技巧</h3><blockquote>
 <p>为了避免硬编码Python解释器的路径，可以在文件第一行注释中这样写：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; <span class="comment">#!/usr/bin/env python</span></span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>当这样编写代码的时候，env程序通过搜索PATH环境变量中罗列出来的所有目录定位python解释器。</p>
 </blockquote>
